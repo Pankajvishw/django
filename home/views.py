@@ -26,3 +26,6 @@ def contact(request):
         contact.save()
         messages.success(request, "Your message has been sent!")
     return render(request, "contact.html")
+
+def test(request):
+    return render(request, "test.html")
